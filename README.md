@@ -1,5 +1,3 @@
-# Charles Tsaur
+# About
 
-## Books
 
-* [Minecraft Redstone Digital Circuits Basis Introduction One](index.md)
