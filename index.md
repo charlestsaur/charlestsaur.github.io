@@ -6,4 +6,4 @@
 
 ---
 
-[About](README.md)
+[About](about.md)
