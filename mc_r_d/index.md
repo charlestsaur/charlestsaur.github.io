@@ -1,6 +1,6 @@
 # 目录索引
 
-[导读](Introduction.md)
+[导读🔗](Introduction.md)
 
 01 • [为什么要了解逻辑电路,有什么用?🔗](01.md)
 
