@@ -4,7 +4,7 @@
 
 ---
 
-<font color=yellow>
+<font color=Dandelion>
 
 我的discord服务器永久邀请链接🔗<https://discord.gg/ktsVf4YPCd>
 
