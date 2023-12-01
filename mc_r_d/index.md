@@ -1,3 +1,14 @@
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
 # 目录索引
 
 <font color=MediumVioletRed>先看这里$\rightarrow$</font>[导读🔗](Introduction.md)<font color=MediumVioletRed>$\leftarrow$先看这里</font>
