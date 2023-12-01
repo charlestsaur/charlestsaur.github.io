@@ -2,6 +2,17 @@
 
 [Index](index.md) - [Next>](01.md)
 
+---
+<font color=yellow>
+
+我的discord服务器永久邀请链接🔗<https://discord.gg/ktsVf4YPCd>
+
+各类学术问题或bug纠错欢迎来我的discord服务器讨论
+
+</font>
+
+---
+
 本教程面向两类玩家, 一类是需要快速学会各种红石电路制作方法的<font color=MediumVioletRed>入门玩家</font>.
 另一类是掌握一定基础, 但需要学习进阶电路理论与高级设计的<font color=MediumVioletRed>进阶玩家</font>
 
