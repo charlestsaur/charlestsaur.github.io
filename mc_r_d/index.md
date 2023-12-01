@@ -1,6 +1,6 @@
 # 目录索引
 
-[导读🔗](Introduction.md)
+<font color=MediumVioletRed>先看这里$\rightarrow$</font>[导读🔗](Introduction.md)<font color=MediumVioletRed>$\leftarrow$先看这里</font>
 
 01 • [为什么要了解逻辑电路,有什么用?🔗](01.md)
 

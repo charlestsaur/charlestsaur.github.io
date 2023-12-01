@@ -4,13 +4,9 @@
 
 ---
 
-<font color=Dandelion>
-
 我的discord服务器永久邀请链接🔗<https://discord.gg/ktsVf4YPCd>
 
 各类学术问题或bug纠错欢迎来我的discord服务器讨论
-
-</font>
 
 ---
 
