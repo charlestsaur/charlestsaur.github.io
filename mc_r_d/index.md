@@ -1,17 +1,6 @@
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
-  }
-};
-</script>
-<script id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
-
 # 目录索引
 
-<font color=MediumVioletRed>先看这里$\rightarrow$</font>[导读🔗](Introduction.md)<font color=MediumVioletRed>$\leftarrow$先看这里</font>
+[我的世界红石数字电路基础介绍——导读🔗](Introduction.md)
 
 01 • [为什么要了解逻辑电路,有什么用?🔗](01.md)
 
