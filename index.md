@@ -1,3 +1,5 @@
+<link rel="icon" href="favicon.png" type="image/png" />
+
 # Charles Tsaur
 
 Welcome to my website.
