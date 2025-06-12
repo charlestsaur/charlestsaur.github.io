@@ -1,20 +1,28 @@
 # Charles Tsaur
 
-Welcome to my website.
+Welcome to my repository.
 
-You are also welcome to discuss in my discord server🔗<https://discord.gg/ktsVf4YPCd>
+This is where I share some short articles I’ve written.I hope they can be helpful to you.
 
-This is where I record the articles I wrote and some other resources. Since this is my first time building a website and writing articles, I may not be doing very well. If there are any mistakes, you are welcome to come to my discord server for feedback, and I will definitely actively modify them!
+## Solutions to some problems
 
-## circuits
+* [Xcode project git configuration](Solutions_to_frequently_asked_questions/Xcode_project_git_configuration.md)
 
-* 📖[我的世界红石数字电路基础介绍](mc_r_d/index.md)
+* [Terminal proxy configuration](Solutions_to_frequently_asked_questions/Terminal_proxy_configuration.md)
+
+* [Terminal command suggestion and autocompletion optimization](Solutions_to_frequently_asked_questions/Terminal_command_suggestion_and_autocompletion_optimization.md)
+
+* [Install Homebrew](Solutions_to_frequently_asked_questions/Homebrew.md)
+
+* [iPhone photo backup](Solutions_to_frequently_asked_questions/iPhone_photo_backup.md)
 
 ---
 
-## Math
+## AI
 
-* [线段中点的坐标公式](Difference_of_two_squares/Difference_of_two_squares.md)
+* [Deploy Stable Diffusion](AI/Stable_Diffusion.md)
+
+* [Install Ollama](AI/Ollama.md)
 
 ---
 
