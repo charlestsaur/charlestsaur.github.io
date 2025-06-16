@@ -10,6 +10,10 @@ This is where I share some short articles I’ve written.I hope they can be help
 
 * [Terminal proxy configuration](Solutions_to_frequently_asked_questions/Terminal_proxy_configuration.md)
 
+* [Terminal Font Settings](Solutions_to_frequently_asked_questions/Terminal_font_settings.md)
+
+* [Starship Configuration Recommendations](Solutions_to_frequently_asked_questions/Starship_Configuration_Recommendations.md)
+
 * [Terminal command suggestion and autocompletion optimization](Solutions_to_frequently_asked_questions/Terminal_command_suggestion_and_autocompletion_optimization.md)
 
 * [Install Homebrew](Solutions_to_frequently_asked_questions/Homebrew.md)
