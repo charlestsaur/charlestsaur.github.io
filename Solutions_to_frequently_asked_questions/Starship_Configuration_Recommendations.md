@@ -1,5 +1,9 @@
 # Starship Configuration Recommendations
 
+[< Index >](/index.md)
+
+---
+
 (This document is applicable to macOS system, and the shell used is `zsh`)
 
 The interface of Terminal that comes with macOS is not very easy to use. For example, there is no file path display, all colors are the same and difficult to distinguish, and there is no convenient display of git status
@@ -104,3 +108,5 @@ style = "blue"
 success_symbol = "[❯](bold green)"
 error_symbol = "[✗](bold red)"
 ```
+
+[< Index >](/index.md)

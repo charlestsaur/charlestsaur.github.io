@@ -1,48 +1,52 @@
 # Terminal Command Suggestion And Autocompletion Optimization
 
-(本文档使用的操作系统是 macOS 并使用 Homebrew)
+[< Index >](/index.md)
 
-## 推荐配置与插件
+---
 
-首先我们先打开 `zsh` 自带的补全,在 `~/.zshrc` 中写入:
+(This document uses macOS and Homebrew)
+
+## Recommended Configuration and Plugins
+
+First, we turn on the built-in completion of `zsh` and write in `~/.zshrc`:
 
 ```plaintext
 autoload -Uz compinit
 compinit
 ```
 
-然后可以让其立即生效:
+Then you can make it take effect immediately:
 
 ```zsh
 source ~/.zshrc
 ```
 
-(但还是建议重启一遍终端)
+(But it is still recommended to restart the terminal)
 
-然后我们可以使用 **zsh-syntax-highlighting** 这个插件
+Then we can use the **zsh-syntax-highlighting** plugin.
 
-它可以检测当前输入的命令是否存在,存在就变绿,不存在就变红,请它的检测是是实时的,即你不运行只是在输入它也会检测,看个人习惯,有人可能会认为不好用
+It can detect whether the currently entered command exists. If it exists, it will turn green, and if it does not exist, it will turn red. Please note that its detection is real-time, that is, it will detect even if you are not running but just typing. It depends on personal habits. Some people may think it is not easy to use.
 
-首先安装:
+First install:
 
 ```zsh
 brew install zsh-syntax-highlighting
 ```
 
-安装好后在 `~/.zshrc` 中写入:
+After installation, in `~/.zshrc` Write in:
 
 ```plaintext
 # zsh-syntax-highlighting
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
 
-一定要将这一行写在你的 `.zshrc` 的最后面,不然可能会报错,不生效
+Be sure to write this line at the end of your `.zshrc`, otherwise it may report an error and not take effect.
 
-然后使用 `source` (但也还是建议再重启一遍)
+Then use `source` (but it is still recommended to restart again).
 
-这个时候它就会实时检测当前输入的命令是否存在了
+At this time, it will detect whether the currently entered command exists in real time.
 
-但由于它会将存在的命令变绿,这和我的终端配色配合起来有点不好看,而且我也希望它只将不存在的变红,存在的就不变色,所以我在还加入了一段配置,这是整个 **zsh-syntax-highlighting** 插件在我的 `.zshrc` 中的配置:
+But because it will turn the existing command green, it is a bit ugly with my terminal color matching, and I also hope that it will only turn the non-existent ones red, and the existing ones will not change color, so I also added a configuration. This is the configuration of the entire **zsh-syntax-highlighting** plug-in in my `.zshrc`:
 
 ```plaintext
 # zsh-syntax-highlighting
@@ -53,43 +57,44 @@ ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=red'
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
 
-(记得写完用 `source` ,也还是建议再重启一遍)
+(Remember to use `source` after writing, and it is still recommended to restart again).
 
-具体可以解释为:
+Specifically, it can be explained as follows:
 
-`typeset -A ZSH_HIGHLIGHT_STYLES` -- 声明一个关联数组 ZSH_HIGHLIGHT_STYLES，用于配置命令高亮样式
+`typeset -A ZSH_HIGHLIGHT_STYLES` -- declare an associative array ZSH_HIGHLIGHT_STYLES, which is used to configure the command highlighting style
 
-`ZSH_HIGHLIGHT_STYLES[command]='none'` -- 对外部命令（如 ls、git）不进行高亮
+`ZSH_HIGHLIGHT_STYLES[command]='none'` -- for external commands (such as ls, git) are not highlighted
 
-`ZSH_HIGHLIGHT_STYLES[builtin]='none'` -- 对内建命令（如 cd、echo）也不进行高亮
+`ZSH_HIGHLIGHT_STYLES[builtin]='none'` -- built-in commands (such as cd, echo) are not highlighted
 
-`ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=red'` -- 对无法识别的命令（拼写错误或不存在的命令）使用红色字体提示
+`ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=red'` -- use red font prompts for unrecognized commands (misspelled or non-existent commands)
 
-`source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh` -- 加载 zsh-syntax-highlighting 插件主脚本，使上述配置生效
+`source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh` -- load zsh-syntax-highlighting plugin main script to make the above configuration effective
 
-
-## 不建议插件
+## Plugins are not recommended
 
 ### zsh-autosuggestions
 
-它会根据你上一次输入这个命令的历史来提供补全建议的,这对于像 `cd` 和 `git commit` 这种命令很不好,因为它将你上一次的用这个命令的时候加的参数显示出来了,比如(假设):
+It will provide completion suggestions based on the history of the last time you entered this command, which is not good for commands like `cd` and `git commit`, because it displays the parameters you added when you used this command last time, such as (assuming):
 
-* 打出 `cd` 后,它后面会用灰色显示 `&nbsp;~/Documents/other/001`,但你大概率是不会再进入上次进入的目录
+* Type `cd` After typing, it will display `&nbsp;~/Documents/other/001` in gray, but you will probably not enter the directory you entered last time.
 
-* 打出 `git commit -m` 后,它会在后面用灰色显示 `&nbsp;"updated the .gitignore"`,但你几乎不会再用和上次一样的提示信息
+* After typing `git commit -m`, it will display `&nbsp;"updated the .gitignore"` in gray, but you will almost never use the same prompt message as last time.
 
 ### **zsh-autocomplete**
 
-它会在你打出一个命令后列出所有可用的选项
+It will list all available options after you type a command.
 
-(它可以用用 ↑ 和 ↓ 选中,选中一行按下 Enter,就会补全,但不会运行,如果你的选中了当前显示的最后一行再按 ↓ ,如果还有未显示的话它就会选中并显示未显示的下一行)
+(It can be selected with ↑ and ↓, and it will complete the line after selecting a line and pressing Enter, but it will not run. If you select the last line currently displayed and press ↓, it will select and display the next line that is not displayed if there is still one).
 
-但这样会导致看起来很不舒服,尤其是终端窗口开的小的时候,它可能会突然将你正在输入的那一行突然抬高,并且你一般是用不到的,常用的都记得到,不常用的用 `zsh` 自带的补全效果一样,或更好,比如:
+But this will make it look uncomfortable, especially when the terminal window is small, it may suddenly raise the line you are typing, and you usually don't use it. You can remember the commonly used ones, and the uncommon ones can be completed with the `zsh` built-in completion effect, or better, such as:
 
-另外如果你使用的是 Homebrew 下载的话,还需要注意在删除 **zsh-autocomplete** 时,用
+Also, if you use If you download it with Homebrew, you also need to pay attention to the use of:
 
 ```zsh
 brew rm zsh-autocomplete # or brew uninstall
 ```
 
-有可能会删不干净,可以加上 `--zap` ,这会尝试删除 `~/Library` 下的相关文件
+It may not be completely deleted, you can add `--zap`, which will try to delete the relevant files under `~/Library`
+
+[< Index >](/index.md)

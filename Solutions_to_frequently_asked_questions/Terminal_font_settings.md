@@ -1,5 +1,9 @@
 # Terminal Font Settings
 
+[< Index >](/index.md)
+
+---
+
 (This document applies to macOS 15)
 
 The default font of Terminal on macOS 15 should be Menlo. This font looks good, but if you need to display Unicode private area characters (Private Use Area, PUA) in your terminal, then this font is not easy to use, because it will be displayed as several horizontal bars or garbled characters
@@ -20,3 +24,5 @@ Terminal > Settings > Profiles > Font
 You may encounter terminal encoding problems. In rare cases, incorrect terminal character encoding settings will also cause icon display abnormalities. Make sure you are using UTF-8:
 
 Terminal > Settings > Profiles > Advanced > International > Text encoding
+
+[< Index >](/index.md)

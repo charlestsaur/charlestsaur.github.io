@@ -1,39 +1,44 @@
 # iPhone photo backup
 
-使用 Image Capture（图像捕捉）
+[< Index >](/index.md)
 
-用数据线将 iPhone 连接到 Mac，并解锁 iPhone。
+---
 
-打开 Image Capture（图像捕捉）（可在“应用程序” > “实用工具”找到）。
+Use Image Capture
 
-选择你的 iPhone 作为设备，在右下角的“导入到”选择 外置硬盘 作为目标文件夹。
+Connect your iPhone to your Mac with a data cable and unlock your iPhone.
 
-点击 “全部导入” 或 选择性导入。
+Open Image Capture (found in Applications > Utilities).
 
-在导入完成后可以统计一下文件夹里有多少图片和视频
+Select your iPhone as the device and select External Hard Drive as the destination folder in "Import to" in the lower right corner.
 
-1. 统计所有图片和视频数量
+Click "Import All" or Import Selectively.
 
-输入以下命令（把 /路径/到/文件夹 替换成你的目标文件夹路径）：
+After the import is complete, you can count how many pictures and videos there are in the folder
 
-```bash
+1. Count all pictures and videos
 
-find "/路径/到/文件夹" \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.gif" -o -iname "*.bmp" -o -iname "*.tiff" -o -iname "*.heic" -o -iname "*.mp4" -o -iname "*.mov" -o -iname "*.avi" -o -iname "*.mkv" -o -iname "*.flv" \) | wc -l
-
-```
-
-回车，它会返回 图片+视频的总数。
-
-2. 分别统计图片和视频的数量
-
-如果你想 分开统计，可以使用：
+Enter the following command (replace /path/to/folder with your target folder path):
 
 ```bash
 
-echo "图片数量：" && find "/路径/到/文件夹" \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.gif" -o -iname "*.bmp" -o -iname "*.tiff" -o -iname "*.heic" \) | wc -l
-echo "视频数量：" && find "/路径/到/文件夹" \( -iname "*.mp4" -o -iname "*.mov" -o -iname "*.avi" -o -iname "*.mkv" -o -iname "*.flv" \) | wc -l
-
+find "/path/to/folder" \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.gif" -o -iname "*.bmp" -o -iname "*.tiff" -o -iname "*.heic" -o -iname "*.mp4" -o -iname "*.mov" -o -iname "*.avi" -o -iname "*.mkv" -o -iname "*.flv" \) | wc -l
 
 ```
 
-这个命令会分别统计 图片 和 视频 的数量。
+Press Enter, it will return the total number of pictures + videos.
+
+2. Count the number of images and videos separately
+
+If you want to count them separately, you can use:
+
+```bash
+
+echo "Number of images:" && find "/path/to/folder" \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.gif" -o -iname "*.bmp" -o -iname "*.tiff" -o -iname "*.heic" \) | wc -l
+echo "Number of videos:" && find "/path/to/folder" \( -iname "*.mp4" -o -iname "*.mov" -o -iname "*.avi" -o -iname "*.mkv" -o -iname "*.flv" \) | wc -l
+
+```
+
+This command will count the number of images and videos separately.
+
+[< Index >](/index.md)

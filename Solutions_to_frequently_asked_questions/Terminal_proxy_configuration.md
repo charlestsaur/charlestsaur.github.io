@@ -1,55 +1,58 @@
 # Terminal proxy configuration
 
-本文所说的操作是适用于 Macos 15 的,所说的命令是适用于 zsh (其实如果你用的是 bash 也没多大问题)
+[< Index >](/index.md)
 
-## 确认系统代理设置
+---
 
-打开 系统设置 > VPN。
+The operations described in this article are applicable to Macos 15.4.1, and the commands described are applicable to zsh (actually, if you use bash, it is not a big problem)
 
-确保你已经配置了所需的代理，并记下代理服务器的地址和端口(认证代理需要用户名和密码)
+## Confirm system proxy settings
 
-(想要看到服务器地址 , 端口 , 用户名 , 密码 这些信息请点击 系统设置 > VPN 中你想要配置在 Terminal 中配置的那个代理后面的ⓘ
+Open System Settings > VPN.
 
+Make sure you have configured the required proxy and note the proxy server address and port (authentication proxy requires username and password)
 
-1. 服务器地址在 Proxies 中的 Server
+(To see the server address, port, username, password information, please click ⓘ behind the proxy you want to configure in Terminal in System Settings > VPN
 
-2. 端口在 Proxies 中的 Port
+1. Server address in Proxies
 
-3. 用户名在 L2TP over IPSec 中的 Account name
+2. Port in Proxies
 
-4. 密码在 L2TP over IPSec 中的 Password
+3. User name in L2TP over IPSec
 
-* 因为后面的操作用的格式是 ```用户名:密码``` ,所以你需要保证你的 User authentication 设置的是 Password,但如果你用的是 RSA SecurID , Certificate , Kerberos , CryptoCard 的话也可以用我后面说的方法试一下,就把 RSA SecurID , Certificate , Kerberos , CryptoCard 当 Password 就行了,但我不保证一定能成功,因为我也没用过 RSA SecurID , Certificate , Kerberos , CryptoCard
+4. Password in L2TP over IPSec
+
+* Because the format used in the following operations is ```user name: password```, you need to make sure your User authentication is set to Password, but if you are using RSA SecurID, Certificate, Kerberos, CryptoCard, you can also try the method I will describe later, just use RSA SecurID, Certificate, Kerberos, CryptoCard as Password, but I can't guarantee that it will succeed, because I have never used RSA SecurID, Certificate , Kerberos , CryptoCard.
 
 )
 
-## 实验
+## Experiment
 
-### 1. 配置(临时,非永久)
+### 1. Configuration (temporary, non-permanent)
 
-非认证代理:
-
-```zsh
-
-export http_proxy=http://代理服务器地址:端口
-export https_proxy=http://代理服务器地址:端口
-export all_proxy=http://代理服务器地址:端口
-
-```
-
-认证代理:
+Non-authentication proxy:
 
 ```zsh
 
-export http_proxy=http://用户名:密码@代理服务器地址:端口
-export https_proxy=http://用户名:密码@代理服务器地址:端口
-export all_proxy=http://用户名:密码@代理服务器地址:端口
+export http_proxy=http://proxy server address:port
+export https_proxy=http://proxy server address:port
+export all_proxy=http://proxy server address:port
 
 ```
 
-### 2. 测试
+Authentication proxy:
 
-输入
+```zsh
+
+export http_proxy=http://username:password@proxy server address:port
+export https_proxy=http://username:password@proxy server address:port
+export all_proxy=http://username:password@proxy server address:port
+
+```
+
+### 2. Test
+
+Input
 
 ```zsh
 
@@ -57,31 +60,33 @@ curl https://www.google.com
 
 ```
 
-如果输出 ```<!doctype html> ... </script>      </body></html>%``` 这么一大坨,即代表成功
+If the output is ```<!doctype html> ... </script> </body></html>%``` Such a large lump means success.
 
-如果成功就可以永久配置了
+If successful, you can configure it permanently.
 
-## 永久配置
+## Permanent configuration
 
-### 1. 现将配置写入 .zshrc 配置文件中
+### 1. Now write the configuration to the .zshrc configuration file
 
 ```zsh
 
-echo "export http_proxy=http://用户名:密码@代理服务器地址:端口" >> ~/.zshrc
-echo "export https_proxy=http://用户名:密码@代理服务器地址:端口" >> ~/.zshrc
-echo "export all_proxy=http://用户名:密码@代理服务器地址:端口" >> ~/.zshrc
+echo "export http_proxy=http://username:password@proxy server address:port" >> ~/.zshrc
+
+echo "export https_proxy=http://username:password@proxy server address:port" >> ~/.zshrc
+
+echo "export all_proxy=http://username:password@proxy server address:port" >> ~/.zshrc
 
 ```
 
-(非认证代理就按上文的写就行)
+(For non-authenticated proxy, just write as above)
 
-或着用 nano , vim 直接编辑 .zshrc (文件地址为 ~/.zshrc )
+Or use nano, vim to edit .zshrc directly (file address is ~/.zshrc ).
 
-### 2.保存你的编辑
+### 2. Save your edits
 
-如果是用 ```echo "..." >> ~/.zshrc``` 方式写入的需要用以下命令保存
+If you write it with ```echo "..." >> ~/.zshrc```, you need to save it with the following command.
 
-(如果是用 nano , vim 编辑的,请按照 nano , vim 的方式保存,当然也建议再用以下的命令保存一遍,因为 nano , vim 中的保存可能只是将 nano , vim 编辑器中编辑的东西保存了,有可能 .zshrc 的更改没有被保存)
+(If you use nano, vim, please save it in the same way as nano or vim. Of course, it is also recommended to save it again with the following command, because saving in nano or vim may only save what is edited in nano or vim editor, and it is possible that the changes in .zshrc are not saved).
 
 ```zsh
 
@@ -89,13 +94,13 @@ source ~/.zshrc
 
 ```
 
-建议在用 ```source ~/.zshrc``` 保存后再将 Terminal 重启一遍
+It is recommended to restart Terminal after saving with ```source ~/.zshrc```.
 
-### 3. 测试
+### 3. Test
 
-跟上面的非永久配置的测试一样
+Same as the non-permanent configuration test above.
 
-输入
+Input:
 
 ```zsh
 
@@ -103,24 +108,25 @@ curl https://www.google.com
 
 ```
 
-如果输出 ```<!doctype html> ... </script>      </body></html>%``` 这么一大坨,即代表成功
+If the output is ```<!doctype html> ... </script> </body></html>%``` such a big lump, it means success.
 
-## 注意事项
+## Notes
 
-### 1. SOCKS 代理
+### 1. SOCKS proxy
 
-如果你的代理是 SOCKS 类型，环境变量需要使用 socks5:// 或 socks4://，例如：
+If your proxy is SOCKS type, the environment variable needs to use socks5:// or socks4://, for example:
 
 ```zsh
 
-export http_proxy=socks5://代理服务器地址:端口
-export https_proxy=socks5://代理服务器地址:端口
+export http_proxy=socks5://proxy server address:port
+
+export https_proxy=socks5://proxy server address:port
 
 ```
 
-### 2. 排除某些地址
+### 2. Exclude certain addresses
 
-如果你想要某些地址不走代理，可以设置 no_proxy：
+If you want certain addresses not to go through the proxy, you can set no_proxy:
 
 ```zsh
 
@@ -128,24 +134,25 @@ export no_proxy="localhost,127.0.0.1,*.local"
 
 ```
 
-### 3. 认证代理
+### 3. Authentication proxy
 
-我要再说一遍
+I'll say it again.
 
-如果代理需要用户名和密码，格式为：
+If the proxy requires a username and password, the format is:
 
 ```zsh
 
-export http_proxy=http://用户名:密码@代理服务器地址:端口
-export https_proxy=http://用户名:密码@代理服务器地址:端口
+export http_proxy=http://username:password@proxy server address:port
+
+export https_proxy=http://username:password@proxy server address:port
 
 ```
 
-### 4. 验证代理
+### 4. Verify the proxy
 
-这个我也要再说一遍
+I'll say it again.
 
-使用以下命令确认代理是否生效：
+Use the following command to confirm whether the proxy is effective:
 
 ```zsh
 
@@ -154,17 +161,17 @@ curl -I https://www.google.com
 
 ```
 
-为什么要加 ```env | grep -i proxy``` 它有什么用?
+Why add ```env | grep -i proxy``` What is its use?
 
-```env | grep -i proxy``` + ```curl -I https://www.google.com``` 的作用:
+```env | grep -i proxy``` + ```curl -I https://www.google.com``` Function:
 
 1. ```env | grep -i proxy``` ：
 
-列出当前 ```shell``` 环境中所有包含 ```proxy```（不区分大小写）的环境变量，例如 ```http_proxy``` , ```https_proxy``` , ```all_proxy``` 等
+List all environment variables containing ```proxy``` (case insensitive) in the current ```shell``` environment, such as ```http_proxy``` , ```https_proxy``` , ```all_proxy``` etc.
 
-用来确认是否正确设置了代理环境变量，以及它们的具体值是否符合预期（例如地址和端口是否正确）
+Used to confirm whether the proxy environment variables are set correctly and whether their specific values ​​meet expectations (such as whether the address and port are correct).
 
-示例输出（假设代理为 ```http://192.168.1.100:8080``` ）：
+Sample output (assuming the proxy is ```http://192.168.1.100:8080```)：
 
 ```zsh
 
@@ -176,18 +183,20 @@ all_proxy=http://192.168.1.100:8080
 
 2. ```curl -I https://www.google.com``` ：
 
-使用 ```curl``` 发送一个 HTTP HEAD 请求到 https://www.google.com，只返回响应头
+Use ```curl``` to send an HTTP HEAD request to https://www.google.com and return only the response headers.
 
-如果代理设置正确，你会看到类似 ```HTTP/2 200``` 的响应，表明通过代理成功访问了目标网站
+If the proxy is set up correctly, you will see a response similar to ```HTTP/2 200```, indicating that the target website was successfully accessed through the proxy.
 
-如果代理未生效或有问题，可能会报错（如 ```Failed to connect``` 或 ```Connection refused```）
+If the proxy is not effective or has problems, you may get an error (such as ```Failed to connect``` or ```Connection refused```).
 
-* ```curl``` 默认行为是发送一个 ```GET``` 请求 并输出 响应体（body），也就是网页的内容或接口返回的内容
+* The default behavior of ```curl``` is to send a ```GET``` request And output the response body, that is, the content of the web page or the content returned by the interface.
 
-* ```curl -I``` 发送一个 ```HEAD``` 请求，只获取响应头（headers），不包括响应体。这在你只想查看服务器响应状态、类型、缓存信息等时很有用
+* ```curl -I``` sends a ```HEAD``` request to get only the response headers, not the response body. This is useful when you only want to view the server response status, type, cache information, etc.
 
-### 5. 有关 ```all_proxy```
+### 5. About ```all_proxy```
 
-如果遇到某些工具（如 git、pip ）无法识别 ```all_proxy```，可以额外设置 ```http_proxy``` 和 ```https_proxy``` 作为后备
+If you encounter some tools (such as git, pip) that cannot recognize ```all_proxy```, you can set ```http_proxy``` and ```https_proxy``` as a fallback.
 
-如果你的代理是 SOCKS 类型或有复杂需求（如绕过特定地址），建议参考之前的详细回答，使用 ```proxychains``` 或设置 ```no_proxy```
+If your proxy is SOCKS type or has complex requirements (such as bypassing specific addresses), it is recommended to refer to the previous detailed answer and use ```proxychains``` or set ```no_proxy```.
+
+[< Index >](/index.md)

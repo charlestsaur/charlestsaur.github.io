@@ -9,6 +9,12 @@ MathJax = {
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
 
+# Metric Balls and Topologies in $\mathbb{R}^n$: From $d'$ to $\rho$
+
+[< Index >](/index.md)
+
+---
+
 $(a)$ Define in $\mathbb{R} ^{n}$
 
 $$d'(x,y) = \vert x_1 - y_1 \vert + \ldots + \vert x_n - y_n \vert$$
@@ -38,3 +44,4 @@ The metric topology induced by $d'$ is the same as the metric topology induced b
 The following figure shows a basis element $B _{d'}\Big((0,0),1 \Big)$ under $d'$:
 
 
+[< Index >](/index.md)

@@ -1,5 +1,9 @@
 # Xcode Project Git Configuration
 
+[< Index >](/index.md)
+
+---
+
 ## Source Control
 
 In the top menu bar, click **Xcode → Settings... → Source Control**
@@ -120,3 +124,5 @@ This will make the Git repository cleaner.
 Then you can delete the content in `.git/info/exclude` (it doesn't matter whether you delete it or not).
 
 OK, now your Xcode project's git is basically set up.
+
+[< Index >](/index.md)
