@@ -31,13 +31,17 @@ This is where I share some short articles I’ve written.I hope they can be help
 
 * [iPhone photo backup](Solutions_to_frequently_asked_questions/iPhone_photo_backup.md) - ([cn](Solutions_to_frequently_asked_questions/iPhone_photo_backup_cn.md))
 
+* [jenv](Solutions_to_frequently_asked_questions/jenv.md) - ([cn](Solutions_to_frequently_asked_questions/jenv_cn.md))
+
 ---
 
 ## AI
 
 * [Deploy Stable Diffusion](AI/Stable_Diffusion.md)
 
-* [Install Ollama](AI/Ollama.md)
+* [Install Ollama (cn)](AI/Ollama.md)
+
+* [open-webui Docker deploy](AI/open-webui_Docker_deploy.md) - ([cn](AI/open-webui_Docker_deploy_cn.md))
 
 ---
 
