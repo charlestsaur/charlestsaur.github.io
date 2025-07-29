@@ -9,7 +9,7 @@ MathJax = {
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
 
-# Charles Tsaur
+# [Charles Tsaur](https://github.com/charlestsaur/charlestsaur.github.io)
 
 Welcome to my repository.
 
@@ -33,8 +33,6 @@ This is where I share some short articles I’ve written.I hope they can be help
 
 * [jenv](Solutions_to_frequently_asked_questions/jenv.md) - ([cn](Solutions_to_frequently_asked_questions/jenv_cn.md))
 
----
-
 ## AI
 
 * [Deploy Stable Diffusion](AI/Stable_Diffusion.md)
@@ -43,12 +41,6 @@ This is where I share some short articles I’ve written.I hope they can be help
 
 * [open-webui Docker deploy](AI/open-webui_Docker_deploy.md) - ([cn](AI/open-webui_Docker_deploy_cn.md))
 
----
-
 ## Topology
 
 * [Metric Balls and Topologies in $\mathbb{R}^n$: From $d'$ to $\rho$](Topology/Metric_Balls_and_Topologies.md)
-
----
-
-[About](about.md)
