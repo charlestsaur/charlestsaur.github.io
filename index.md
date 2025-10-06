@@ -26,7 +26,7 @@ This is where I share some short articles I’ve written.I hope they can be help
 
 * [Terminal Font Settings](/Solutions_to_frequently_asked_questions/Terminal_font_settings.md)
 
-* [Starship Configuration Recommendations](/Solutions_to_frequently_asked_questions/Starship_Configuration_Recommendations.md) - [cn](/Solutions_to_frequently_asked_questions/Starship_Configuration_Recommendations_cn.md)
+* [Starship Configuration Recommendations](/Solutions_to_frequently_asked_questions/Starship_Configuration_Recommendations.md) - ([cn](/Solutions_to_frequently_asked_questions/Starship_Configuration_Recommendations_cn.md))
 
 * [Terminal command suggestion and autocompletion optimization](/Solutions_to_frequently_asked_questions/Terminal_command_suggestion_and_autocompletion_optimization.md) - ([cn](/Solutions_to_frequently_asked_questions/Terminal_command_suggestion_and_autocompletion_optimization_cn.md))
 
@@ -35,6 +35,8 @@ This is where I share some short articles I’ve written.I hope they can be help
 * [iPhone photo backup](/Solutions_to_frequently_asked_questions/iPhone_photo_backup.md) - ([cn](/Solutions_to_frequently_asked_questions/iPhone_photo_backup_cn.md))
 
 * [jenv](/Solutions_to_frequently_asked_questions/jenv.md) - ([cn](/Solutions_to_frequently_asked_questions/jenv_cn.md))
+
+* [SSH_key_change_problem](/Solutions_to_frequently_asked_questions/SSH_key_change_problem.md) - ([cn](/Solutions_to_frequently_asked_questions/SSH_key_change_problem_cn.md))
 
 ## AI
 
