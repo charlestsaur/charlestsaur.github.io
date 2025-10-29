@@ -36,9 +36,11 @@ This is where I share some short articles I’ve written.I hope they can be help
 
 * [jenv](/Solutions_to_frequently_asked_questions/jenv.md) - ([cn](/Solutions_to_frequently_asked_questions/jenv_cn.md))
 
-* [SSH_key_change_problem](/Solutions_to_frequently_asked_questions/SSH_key_change_problem.md) - ([cn](/Solutions_to_frequently_asked_questions/SSH_key_change_problem_cn.md))
+* [SSH key change problem](/Solutions_to_frequently_asked_questions/SSH_key_change_problem.md) - ([cn](/Solutions_to_frequently_asked_questions/SSH_key_change_problem_cn.md))
 
 ## AI
+
+* [LLM Usage And Some Principles](/AI/LLM_Usage_And_Some_Principles/Index.md)
 
 * [Deploy Stable Diffusion](/AI/Stable_Diffusion.md)
 
