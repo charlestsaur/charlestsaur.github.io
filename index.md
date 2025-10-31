@@ -19,7 +19,6 @@ This is where I share some short articles I’ve written.I hope they can be help
 
 * [Xcode project git configuration](/Solutions_to_frequently_asked_questions/Xcode_project_git_configuration.md)
 
-
 * [lima linux installation (cn)](/Solutions_to_frequently_asked_questions/lima_linux_installation_cn.md)
 
 * [Terminal proxy configuration](/Solutions_to_frequently_asked_questions/Terminal_proxy_configuration.md) - ([cn](/Solutions_to_frequently_asked_questions/Terminal_proxy_configuration_cn.md))
@@ -37,6 +36,8 @@ This is where I share some short articles I’ve written.I hope they can be help
 * [jenv](/Solutions_to_frequently_asked_questions/jenv.md) - ([cn](/Solutions_to_frequently_asked_questions/jenv_cn.md))
 
 * [SSH key change problem](/Solutions_to_frequently_asked_questions/SSH_key_change_problem.md) - ([cn](/Solutions_to_frequently_asked_questions/SSH_key_change_problem_cn.md))
+
+* [Xcode Update (cn)](/Solutions_to_frequently_asked_questions/Xcode_Update.md)
 
 ## AI
 
