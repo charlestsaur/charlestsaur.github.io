@@ -1,6 +1,6 @@
 # Xcode Project Git Configuration
 
-[< Index >](/index.md)
+[< Index >](../index.md)
 
 ---
 
@@ -125,4 +125,4 @@ Then you can delete the content in `.git/info/exclude` (it doesn't matter whethe
 
 OK, now your Xcode project's git is basically set up.
 
-[< Index >](/index.md)
+[< Index >](../index.md)

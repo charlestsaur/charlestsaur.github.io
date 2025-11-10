@@ -1,6 +1,6 @@
 # Terminal proxy configuration
 
-[< Index >](/index.md)
+[< Index >](../index.md)
 
 ---
 
@@ -195,4 +195,4 @@ all_proxy=http://192.168.1.100:8080
 
 如果你的代理是 SOCKS 类型或有复杂需求（如绕过特定地址），建议参考之前的详细回答，使用 ```proxychains``` 或设置 ```no_proxy```
 
-[< Index >](/index.md)
+[< Index >](../index.md)

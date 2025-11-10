@@ -1,6 +1,6 @@
 # Terminal Font Settings
 
-[< Index >](/index.md)
+[< Index >](../index.md)
 
 ---
 
@@ -25,4 +25,4 @@ You may encounter terminal encoding problems. In rare cases, incorrect terminal 
 
 Terminal > Settings > Profiles > Advanced > International > Text encoding
 
-[< Index >](/index.md)
+[< Index >](../index.md)

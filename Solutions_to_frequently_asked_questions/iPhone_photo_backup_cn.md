@@ -1,6 +1,6 @@
 # iPhone photo backup
 
-[< Index >](/index.md)
+[< Index >](../index.md)
 
 ---
 
@@ -42,4 +42,4 @@ echo "视频数量：" && find "/路径/到/文件夹" \( -iname "*.mp4" -o -ina
 
 这个命令会分别统计 图片 和 视频 的数量。
 
-[< Index >](/index.md)
+[< Index >](../index.md)

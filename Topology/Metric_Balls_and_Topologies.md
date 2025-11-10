@@ -11,7 +11,7 @@ MathJax = {
 
 # Metric Balls and Topologies in $\mathbb{R}^n$: From $d'$ to $\rho$
 
-[< Index >](/index.md)
+[< Index >](../index.md)
 
 ---
 
@@ -44,4 +44,4 @@ The metric topology induced by $d'$ is the same as the metric topology induced b
 The following figure shows a basis element $B _{d'}\Big((0,0),1 \Big)$ under $d'$:
 
 
-[< Index >](/index.md)
+[< Index >](../index.md)

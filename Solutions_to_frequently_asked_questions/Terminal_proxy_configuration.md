@@ -1,6 +1,6 @@
 # Terminal proxy configuration
 
-[< Index >](/index.md)
+[< Index >](../index.md)
 
 ---
 
@@ -199,4 +199,4 @@ If you encounter some tools (such as git, pip) that cannot recognize ```all_prox
 
 If your proxy is SOCKS type or has complex requirements (such as bypassing specific addresses), it is recommended to refer to the previous detailed answer and use ```proxychains``` or set ```no_proxy```.
 
-[< Index >](/index.md)
+[< Index >](../index.md)

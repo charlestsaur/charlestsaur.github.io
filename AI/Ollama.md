@@ -6,7 +6,6 @@
 
 ### 1. 通过 Homebrew 安装
 
-
 如果你已经有了 Homebrew 了,可以使用这个命令会自动下载并安装Ollama及其所需的依赖项。
 
 ```sh
@@ -29,9 +28,9 @@ brew install --cask ollama
 
 ### 2. 去官网下载安装
 
-https://ollama.com/
+[https://ollama.com](https://ollama.com)
 
-https://github.com/ollama/ollama
+[https://github.com/ollama/ollama](https://github.com/ollama/ollama)
 
 ## USE ollama
 
@@ -66,10 +65,9 @@ https://github.com/ollama/ollama
 | LLaVA              	| 7B         	| 4.5GB 	| ollama run llava               	|
 | Granite-3.2        	| 8B         	| 4.9GB 	| ollama run granite3.2          	|
 
-
 (ollama run ...其实是运行某个模型,但由你没有这个模型,所以ollama检测到后便会开始下载这个模型)
 
-(参考 https://github.com/ollama/ollama)
+(参考 [https://github.com/ollama/ollama](https://github.com/ollama/ollama))
 
 等待下载完成后即可使用
 
@@ -99,5 +97,4 @@ Page Assist - A Web UI for Local AI Models 属于浏览器插件
 
 如果你使用的是 Chrome 浏览器,那访问以下网址下载即可 
 
-https://chromewebstore.google.com/detail/page-assist-a-web-ui-for/jfgfiigpkhlkbnfnbobbkinehhfdhndo?hl=en-US&utm_source=ext_sidebar
-
+[https://chromewebstore.google.com/detail/page-assist-a-web-ui-for/jfgfiigpkhlkbnfnbobbkinehhfdhndo?hl=en-US&utm_source=ext_sidebar](https://chromewebstore.google.com/detail/page-assist-a-web-ui-for/jfgfiigpkhlkbnfnbobbkinehhfdhndo?hl=en-US&utm_source=ext_sidebar)

@@ -1,6 +1,6 @@
 # Terminal Command Suggestion And Autocompletion Optimization
 
-[< Index >](/index.md)
+[< Index >](../index.md)
 
 ---
 
@@ -97,4 +97,4 @@ brew rm zsh-autocomplete # or brew uninstall
 
 It may not be completely deleted, you can add `--zap`, which will try to delete the relevant files under `~/Library`
 
-[< Index >](/index.md)
+[< Index >](../index.md)

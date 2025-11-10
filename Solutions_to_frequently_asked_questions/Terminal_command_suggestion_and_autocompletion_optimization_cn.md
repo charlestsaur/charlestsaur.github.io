@@ -1,6 +1,6 @@
 # Terminal Command Suggestion And Autocompletion Optimization
 
-[< Index >](/index.md)
+[< Index >](../index.md)
 
 ---
 
@@ -98,4 +98,4 @@ brew rm zsh-autocomplete # or brew uninstall
 
 有可能会删不干净,可以加上 `--zap` ,这会尝试删除 `~/Library` 下的相关文件
 
-[< Index >](/index.md)
+[< Index >](../index.md)

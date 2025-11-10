@@ -1,6 +1,6 @@
 # Starship Configuration Recommendations
 
-[< Index >](/index.md)
+[< Index >](../index.md)
 
 ---
 
@@ -109,4 +109,4 @@ success_symbol = "[❯](bold green)"
 error_symbol = "[✗](bold red)"
 ```
 
-[< Index >](/index.md)
+[< Index >](../index.md)

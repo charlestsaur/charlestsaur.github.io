@@ -1,6 +1,6 @@
 # Homebrew
 
-[< Index >](/index.md)
+[< Index >](../index.md)
 
 ---
 
@@ -75,4 +75,4 @@ brew install --cask visual-studio-code
 
 This way you don't have to download .dmg from the official website and manually drag and install it.
 
-[< Index >](/index.md)
+[< Index >](/..index.md)
