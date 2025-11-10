@@ -1,4 +1,4 @@
-# iPhone photo backup
+# iPhone Photo Backup
 
 [< Index >](../index.md)
 

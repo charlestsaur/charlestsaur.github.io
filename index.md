@@ -31,7 +31,7 @@ This is where I share some short articles I’ve written.I hope they can be help
 
 * [Install Homebrew](Solutions_to_frequently_asked_questions/Homebrew.md) - ([cn](Solutions_to_frequently_asked_questions/Homebrew_cn.md))
 
-* [iPhone photo backup](Solutions_to_frequently_asked_questions/iPhone_photo_backup.md) - ([cn](Solutions_to_frequently_asked_questions/iPhone_photo_backup_cn.md))
+* [iPhone Photo Backup](Solutions_to_frequently_asked_questions/iPhone_Photo_Backup.md) - ([cn](Solutions_to_frequently_asked_questions/iPhone_Photo_Backup_cn.md))
 
 * [jenv](Solutions_to_frequently_asked_questions/jenv.md) - ([cn](Solutions_to_frequently_asked_questions/jenv_cn.md))
 
