@@ -51,9 +51,9 @@ This is where I share some short articles I’ve written.I hope they can be help
 
 * [Open-LLM-VTuber deploy (cn)](AI/Open-LLM-VTuber_deploy_cn.md)
 
-* [LLM_Information_Compilation](AI/LLM_Information_Compilation.md) - ([cn](AI/LLM_Information_Compilation_cn.md))
+* [LLM Information Compilation](AI/LLM_Information_Compilation.md) - ([cn](AI/LLM_Information_Compilation_cn.md))
 
-* [Llama_Models](AI/Llama_Models.md) - ([cn](AI/Llama_Models_cn.md))
+* [Llama Models](AI/Llama_Models.md) - ([cn](AI/Llama_Models_cn.md))
 
 ## Topology
 
