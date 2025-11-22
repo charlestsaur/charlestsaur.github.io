@@ -385,3 +385,19 @@ Meta 称 Llama4 使用了“早起融合技术”来实现多模态，所以可�
 总之在相同总参数，但不考虑计算资源的情况下，Dense 的能力应该优于 MoE
 
 不过这些东西都太过主观，即使有各种测评，但听别人这说那说，不如自己一试
+
+<script src="https://giscus.app/client.js"
+        data-repo="charlestsaur/charlestsaur.github.io"
+        data-repo-id="R_kgDOKvWJJA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOKvWJJM4CyE4o"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
