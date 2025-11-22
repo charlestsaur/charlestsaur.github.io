@@ -55,6 +55,10 @@ This is where I share some short articles I’ve written.I hope they can be help
 
 * [Llama Models](AI/Llama_Models.md) - ([cn](AI/Llama_Models_cn.md))
 
+## Math
+
+* [An Excursion through Elementary Mathematics, Volume I](Math/Excursion/index.md)
+
 ## Topology
 
 * [Metric Balls and Topologies in $\mathbb{R}^n$: From $d'$ to $\rho$](Topology/Metric_Balls_and_Topologies.md)
