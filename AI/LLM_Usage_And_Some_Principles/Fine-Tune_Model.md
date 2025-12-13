@@ -1,3 +1,14 @@
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
 # Fine-Tune Model - 微调模型
 
 ## 简易操作
@@ -29,6 +40,8 @@ data
 {"prompt": "Openai 最新的开源模型", "completion": "gpt-oss-20b 或 120b"}
 {"prompt": "Llama 最新的开源模型", "completion": "Llama4"}
 ```
+
+(目前，mlx-lm 文件支持 chat、tools、completions和text 数据格式。)
 
 还需新建一个 `gemma-3-12b-lora` 文件夹存储微调后的权重
 
@@ -111,9 +124,9 @@ mlx_lm.lora \
   --test-batches -1
 ```
 
-现在 gemma-3-12b-lora 中的只是微调权重, 并不能直接推理, 需要与原始权重合并出一个新的 mlx 模型才可以
+现在 `gemma-3-12b-lora` 中的只是微调权重, 并不能直接推理, 需要与原始权重合并出一个新的 mlx 模型才可以
 
-创建一个新的文件夹 gemma-3-12b-fused, 然后合并:
+创建一个新的文件夹 `gemma-3-12b-fused`, 然后合并:
 
 ```zsh
 mlx_lm.fuse \
@@ -142,7 +155,7 @@ print(response)
 
 对于只是想要让 AI 知道某个东西, 或者模仿某种风格, 的用途, LoRA 应该足够了, 所以我选择将 txt 拆分成 jsonl 给模型微调, 具体为:
 
-按行拆分, 将 txt 文件中的每一行拆分成 `{"prompt": "", "completion": ""}` 的样子 (跳过空行), 比如:
+按行拆分, 将 txt 文件中的每一行拆分成 `{"text": ""}` 的样子 (跳过空行), 比如:
 
 ```plaintext
 “你早上说过了。”
@@ -153,9 +166,9 @@ print(response)
 ```
 
 ```jsonl
-{"prompt": "", "completion": "“你早上说过了。”"}
-{"prompt": "", "completion": "“但我还要再说。”"}
-{"prompt": "", "completion": "“我不要听一样的话。”"}
+{"text": "“你早上说过了。”"}
+{"text": "“但我还要再说。”"}
+{"text": "“我不要听一样的话。”"}
 ```
 
 提前保证你的 txt 文件中的内容分好了行, 并使用 UTF-8

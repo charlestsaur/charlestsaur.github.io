@@ -42,7 +42,7 @@ def create_jsonl_files(input_file, output_dir, mode):
     train_path = os.path.join(output_dir, "train.jsonl")
     with open(train_path, "w", encoding="utf-8") as train_out:
         for line in lines:
-            json.dump({"prompt": "", "completion": line}, train_out, ensure_ascii=False)
+            json.dump({"text": line}, train_out, ensure_ascii=False)
             train_out.write("\n")
 
     valid_size = max(1, int(len(lines) * 0.1))
@@ -71,7 +71,7 @@ def create_jsonl_files(input_file, output_dir, mode):
         valid_lines = sample_with_max_duplicate(lines, valid_size, max_duplicate_ratio=0.1)
         with open(os.path.join(output_dir, "valid.jsonl"), "w", encoding="utf-8") as valid_out:
             for line in valid_lines:
-                json.dump({"prompt": "", "completion": line}, valid_out, ensure_ascii=False)
+                json.dump({"text": line}, valid_out, ensure_ascii=False)
                 valid_out.write("\n")
         print(f"✅ Done: {len(lines)} train + {len(valid_lines)} valid samples")
 
@@ -80,7 +80,7 @@ def create_jsonl_files(input_file, output_dir, mode):
         valid_lines = random.sample(lines, min(valid_size, len(lines)))
         with open(os.path.join(output_dir, "valid.jsonl"), "w", encoding="utf-8") as valid_out:
             for line in valid_lines:
-                json.dump({"prompt": "", "completion": line}, valid_out, ensure_ascii=False)
+                json.dump({"text": line}, valid_out, ensure_ascii=False)
                 valid_out.write("\n")
         print(f"✅ Done: {len(lines)} train + {len(valid_lines)} valid samples")
 
@@ -90,11 +90,11 @@ def create_jsonl_files(input_file, output_dir, mode):
         test_lines = sample_with_max_duplicate(lines, valid_size, max_duplicate_ratio=0.1)
         with open(os.path.join(output_dir, "valid.jsonl"), "w", encoding="utf-8") as valid_out:
             for line in valid_lines:
-                json.dump({"prompt": "", "completion": line}, valid_out, ensure_ascii=False)
+                json.dump({"text": line}, valid_out, ensure_ascii=False)
                 valid_out.write("\n")
         with open(os.path.join(output_dir, "test.jsonl"), "w", encoding="utf-8") as test_out:
             for line in test_lines:
-                json.dump({"prompt": "", "completion": line}, test_out, ensure_ascii=False)
+                json.dump({"text": line}, test_out, ensure_ascii=False)
                 test_out.write("\n")
         print(f"✅ Done: {len(lines)} train + {len(valid_lines)} valid + {len(test_lines)} test samples")
 
@@ -108,11 +108,11 @@ def create_jsonl_files(input_file, output_dir, mode):
         test_lines = random.sample(remaining_lines, test_size) if remaining_lines else []
         with open(os.path.join(output_dir, "valid.jsonl"), "w", encoding="utf-8") as valid_out:
             for line in valid_lines:
-                json.dump({"prompt": "", "completion": line}, valid_out, ensure_ascii=False)
+                json.dump({"text": line}, valid_out, ensure_ascii=False)
                 valid_out.write("\n")
         with open(os.path.join(output_dir, "test.jsonl"), "w", encoding="utf-8") as test_out:
             for line in test_lines:
-                json.dump({"prompt": "", "completion": line}, test_out, ensure_ascii=False)
+                json.dump({"text": line}, test_out, ensure_ascii=False)
                 test_out.write("\n")
         print(f"✅ Done: {len(lines)} train + {len(valid_lines)} valid + {len(test_lines)} test samples")
 
@@ -143,5 +143,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 ```

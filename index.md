@@ -55,6 +55,8 @@ This is where I share some short articles I’ve written.I hope they can be help
 
 * [Llama Models](AI/Llama_Models.md) - ([cn](AI/Llama_Models_cn.md))
 
+* [Back Propagation (cn)](AI/Back_Propagation.md)
+
 ## Math
 
 * [An Excursion through Elementary Mathematics, Volume I](Math/Excursion/index.md)
