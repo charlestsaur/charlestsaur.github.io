@@ -40,5 +40,3 @@ echo "Number of videos:" && find "/path/to/folder" \( -iname "*.mp4" -o -iname "
 ```
 
 This command will count the number of images and videos separately.
-
-[< Index >](../index.md)

@@ -175,7 +175,7 @@ print(response)
 
 提前保证你的 txt 文件中的内容分好了行, 并使用 UTF-8
 
-一般来说我个人更倾向于将所有内容都写入 `train.jsonl`, 这里提供一个 [**小脚本**](/Ai/LLM_Usage_And_Some_Principles/Data-Splitting_Script.md)（脚本中有四种拆分选项）
+一般来说我个人更倾向于将所有内容都写入 `train.jsonl`, 这里提供一个 [**小脚本**](Data-Splitting_Script.md)（脚本中有四种拆分选项）
 
 100 万字的小说微调, 可以采用以下参数:
 

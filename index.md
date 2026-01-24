@@ -11,6 +11,8 @@ MathJax = {
 
 # [Charles Tsaur](https://github.com/charlestsaur/charlestsaur.github.io)
 
+[English] [[中文]](index_zh.md)
+
 Welcome to my repository.
 
 This is where I share some short articles I’ve written.I hope they can be helpful to you.
@@ -19,43 +21,29 @@ This is where I share some short articles I’ve written.I hope they can be help
 
 * [Xcode project git configuration](Solutions_to_frequently_asked_questions/Xcode_project_git_configuration.md)
 
-* [lima linux installation (cn)](Solutions_to_frequently_asked_questions/lima_linux_installation_cn.md)
-
-* [Terminal proxy configuration](Solutions_to_frequently_asked_questions/Terminal_proxy_configuration.md) - ([cn](Solutions_to_frequently_asked_questions/Terminal_proxy_configuration_cn.md))
+* [Terminal proxy configuration](Solutions_to_frequently_asked_questions/Terminal_proxy_configuration.md)
 
 * [Terminal Font Settings](Solutions_to_frequently_asked_questions/Terminal_font_settings.md)
 
-* [Starship Configuration Recommendations](Solutions_to_frequently_asked_questions/Starship_Configuration_Recommendations.md) - ([cn](Solutions_to_frequently_asked_questions/Starship_Configuration_Recommendations_cn.md))
+* [Starship Configuration Recommendations](Solutions_to_frequently_asked_questions/Starship_Configuration_Recommendations.md)
 
-* [Terminal command suggestion and autocompletion optimization](Solutions_to_frequently_asked_questions/Terminal_command_suggestion_and_autocompletion_optimization.md) - ([cn](Solutions_to_frequently_asked_questions/Terminal_command_suggestion_and_autocompletion_optimization_cn.md))
+* [Terminal command suggestion and autocompletion optimization](Solutions_to_frequently_asked_questions/Terminal_command_suggestion_and_autocompletion_optimization.md)
 
-* [Install Homebrew](Solutions_to_frequently_asked_questions/Homebrew.md) - ([cn](Solutions_to_frequently_asked_questions/Homebrew_cn.md))
+* [Install Homebrew](Solutions_to_frequently_asked_questions/Homebrew.md)
 
-* [iPhone Photo Backup](Solutions_to_frequently_asked_questions/iPhone_Photo_Backup.md) - ([cn](Solutions_to_frequently_asked_questions/iPhone_Photo_Backup_cn.md))
+* [iPhone Photo Backup](Solutions_to_frequently_asked_questions/iPhone_Photo_Backup.md)
 
-* [jenv](Solutions_to_frequently_asked_questions/jenv.md) - ([cn](Solutions_to_frequently_asked_questions/jenv_cn.md))
+* [jenv](Solutions_to_frequently_asked_questions/jenv.md)
 
-* [SSH key change problem](Solutions_to_frequently_asked_questions/SSH_key_change_problem.md) - ([cn](Solutions_to_frequently_asked_questions/SSH_key_change_problem_cn.md))
-
-* [Xcode Update (cn)](Solutions_to_frequently_asked_questions/Xcode_Update.md)
+* [SSH key change problem](Solutions_to_frequently_asked_questions/SSH_key_change_problem.md)
 
 ## AI
 
-* [LLM Usage And Some Principles](AI/LLM_Usage_And_Some_Principles/Index.md)
+* [open-webui Docker deploy](AI/open-webui_Docker_deploy.md)
 
-* [Deploy Stable Diffusion](AI/Stable_Diffusion.md)
+* [LLM Information Compilation](AI/LLM_Information_Compilation.md)
 
-* [Install Ollama (cn)](AI/Ollama.md)
-
-* [open-webui Docker deploy](AI/open-webui_Docker_deploy.md) - ([cn](AI/open-webui_Docker_deploy_cn.md))
-
-* [Open-LLM-VTuber deploy (cn)](AI/Open-LLM-VTuber_deploy_cn.md)
-
-* [LLM Information Compilation](AI/LLM_Information_Compilation.md) - ([cn](AI/LLM_Information_Compilation_cn.md))
-
-* [Llama Models](AI/Llama_Models.md) - ([cn](AI/Llama_Models_cn.md))
-
-* [Back Propagation (cn)](AI/Back_Propagation.md)
+* [Llama Models](AI/Llama_Models.md)
 
 ## Math
 
@@ -70,7 +58,3 @@ This is where I share some short articles I’ve written.I hope they can be help
 * [If by Life You Were Deceived](Modern_Poetry/if_by_life_you_were_deceived.md)
 
 * [Paper Slips of Freedom](Modern_Poetry/Paper_Slips_of_Freedom.md)
-
-## MC
-
-* [Minecraft Mod And Installation Management (cn)](Solutions_to_frequently_asked_questions/Minecraft_Mod_And_Installation_Management_cn.md)

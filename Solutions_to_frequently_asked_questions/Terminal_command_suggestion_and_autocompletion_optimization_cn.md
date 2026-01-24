@@ -1,6 +1,6 @@
 # Terminal Command Suggestion And Autocompletion Optimization
 
-[< Index >](../index.md)
+[< Index >](../index_zh.md)
 
 ---
 

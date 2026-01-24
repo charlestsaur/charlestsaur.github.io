@@ -1,6 +1,6 @@
 # LLM Usage And Some Principles
 
-[< Index >](../../Index.md)
+[< Index >](../../index_zh.md)
 
 本文档偏向在使用的途中了解 LLM 的部分原理
 

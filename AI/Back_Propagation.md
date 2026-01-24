@@ -1,3 +1,14 @@
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
 # 反向传播（Back Propagation）
 
 （GPT 为共同创作者）
@@ -339,3 +350,19 @@ $$
 * 反向传播依赖链式法则和每层局部导数 —— 如果激活函数不可导（如 ReLU 在 0 处不可导），在实现上通常对不可导点取次梯度（subgradient），实践中效果很好。
 
 * 在深层网络中，梯度可能 **衰减（vanishing）** 或 **爆炸（exploding）**，这需要用好初始化、归一化、残差连接等技巧来缓解。
+
+<script src="https://giscus.app/client.js"
+        data-repo="charlestsaur/charlestsaur.github.io"
+        data-repo-id="R_kgDOKvWJJA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOKvWJJM4CyE4o"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>

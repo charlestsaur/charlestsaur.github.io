@@ -1,6 +1,6 @@
 # Terminal proxy configuration
 
-[< Index >](../index.md)
+[< Index >](../index_zh.md)
 
 ---
 
