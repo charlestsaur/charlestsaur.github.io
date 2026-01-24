@@ -11,6 +11,8 @@ MathJax = {
 
 # Fine-Tune Model - 微调模型
 
+[< Index >](Index.md)
+
 ## 简易操作
 
 我们先以一个简单的操作流程来了解什么是微调:

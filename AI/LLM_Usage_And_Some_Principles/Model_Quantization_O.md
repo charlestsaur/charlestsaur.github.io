@@ -1,5 +1,7 @@
 # 操作
 
+[< Index >](Index.md)
+
 操作十分简单，mlx-lm 中有关量化的命令：
 
 * **`mlx_lm.gptq`**：GPTQ（Gumbel-Product Quantization / General Purpose Quantization）量化

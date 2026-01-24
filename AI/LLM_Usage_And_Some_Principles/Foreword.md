@@ -1,5 +1,7 @@
 # LLM Usage And Some Principles
 
+[< Index >](Index.md)
+
 本文档偏向在使用的途中了解 LLM 的部分原理
 
 使用的 LLM 推理框架为: MLX

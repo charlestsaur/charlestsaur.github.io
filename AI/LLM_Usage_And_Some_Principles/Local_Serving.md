@@ -1,5 +1,7 @@
 # Local Serving
 
+[< Index >](Index.md)
+
 如果你想要这样使用 mlx-lm 为本地的图形化界面提供可使用的 LLM:
 
 ```zsh

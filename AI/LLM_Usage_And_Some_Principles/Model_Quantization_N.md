@@ -11,6 +11,8 @@ MathJax = {
 
 # Model Quantization
 
+[< Index >](Index.md)
+
 ## 量化原理
 
 量化 (Quantization) 的核心是:

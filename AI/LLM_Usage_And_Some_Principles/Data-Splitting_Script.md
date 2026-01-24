@@ -1,5 +1,7 @@
 # Data-Splitting Script
 
+[< Index >](Index.md)
+
 本脚本有四种拆分选择:
 
 脚本会自动生成 `data` 目录, 但请注意如果原本有 `data`, 它会直接覆盖

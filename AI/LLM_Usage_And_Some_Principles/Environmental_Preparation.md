@@ -1,5 +1,7 @@
 # Environmental preparation - 环境准备
 
+[< Index >](Index.md)
+
 首先确保:
 
 * 使用的是 M 系芯片 (Apple Silicon)

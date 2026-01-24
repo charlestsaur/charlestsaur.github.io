@@ -1,5 +1,7 @@
 # Python API
 
+[< Index >](Index.md)
+
 MLX 官方的 Python API 文档：[https://ml-explore.github.io/mlx/build/html/python/array.html](https://ml-explore.github.io/mlx/build/html/python/array.html)
 
 有时候写脚本做模型测试, 经常会用到 `mlx_lm.generate`, 在终端中输入 `mlx_lm.generate --help`, 你会发现有有一堆支持的参数:

@@ -11,6 +11,8 @@ MathJax = {
 
 # Learning Rate
 
+[< Index >](Index.md)
+
 ## 基本梯度下降
 
 假设模型的参数为 $\theta \in \mathbb{R}^d$, 损失函数为 $L(\theta)$, 梯度下降 (Gradient Descent) 每一步更新公式为:
