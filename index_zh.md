@@ -53,6 +53,10 @@ This is where I share some short articles I’ve written.I hope they can be help
 
 * [Back Propagation](AI/Back_Propagation.md)
 
+## C-CPP
+
+* [C/C++/CUDA Program Compilation Environment on Windows](C-CPP/C-CPP_CUDA_Win_Env_cn.md)
+
 ## MC
 
 * [Minecraft Mod And Installation Management](Solutions_to_frequently_asked_questions/Minecraft_Mod_And_Installation_Management_cn.md)
