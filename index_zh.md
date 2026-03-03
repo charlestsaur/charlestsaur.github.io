@@ -39,6 +39,8 @@ This is where I share some short articles I’ve written.I hope they can be help
 
 ## AI
 
+* [Fundamentals_of_Artificial_Intelligence](AI/Fundamentals_of_Artificial_Intelligence/Fundamentals_of_Artificial_Intelligence.md)
+
 * [LLM Usage And Some Principles](AI/LLM_Usage_And_Some_Principles/Index.md)
 
 * [Install Ollama](AI/Ollama.md)
