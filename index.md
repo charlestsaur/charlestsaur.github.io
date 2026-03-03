@@ -57,6 +57,12 @@ This is where I share some short articles I’ve written.I hope they can be help
 
 * [Metric Balls and Topologies in $\mathbb{R}^n$: From $d'$ to $\rho$](Topology/Metric_Balls_and_Topologies.md)
 
+## Assembly
+
+* [Mini Assembly Snake Game](Assembly/Mini_Assembly_Snake_Game/Mini_Assembly_Snake_Game.md)
+
+* [Introduction to Assembly Instructions](Assembly/Introduction_to_Assembly_Instructions.md)
+
 ## Modern Poetry
 
 * [If by Life You Were Deceived](Modern_Poetry/if_by_life_you_were_deceived.md)
